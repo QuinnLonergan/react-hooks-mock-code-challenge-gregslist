@@ -1,11 +1,13 @@
 import React from "react";
+import ListingCard from "./ListingCard"
 // import ListingCard from "./ListingCard";
+import Listings from "./Listings";
 
-function ListingsContainer() {
+function ListingsContainer({searchItem}) {
   return (
     <main>
       <ul className="cards">
-        {/* use the ListingCard component to display listings */}
+        {<Listings searchItem={searchItem}/>}
       </ul>
     </main>
   );
